@@ -1,0 +1,13 @@
+{
+    "name": "smc-road-damage-system",
+    "version": "1.0.0",
+    "description": "Road Damage Management System",
+    "scripts": {
+        "cy:open": "cypress open",
+        "cy:run": "cypress run"
+    },
+    "devDependencies": {
+        "cypress": "^13.0.0",
+        "cypress-file-upload": "^5.0.8"
+    }
+}
