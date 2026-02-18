@@ -8,11 +8,11 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue.svg)](https://www.postgresql.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 📖 Overview
+## Overview :-
 
 The SMC Road Damage Management Platform is a **web-first, production-ready** civic infrastructure system designed for immediate deployment in Solapur Municipal Corporation. It enables citizens to report road damage issues while providing municipal officials with AI-assisted tools for verification, routing, and resolution—all with **complete human oversight**.
 
-### 🎯 Key Principles
+### Key Principles :-
 
 1. **Human Control First**: AI assists, humans decide
 2. **Transparency**: Every action is logged and auditable
@@ -21,31 +21,31 @@ The SMC Road Damage Management Platform is a **web-first, production-ready** civ
 5. **Modern Stack**: Works with Python 3.14+ (including alpha releases)
 6. **Accountability**: Complete audit trails
 
-## ✨ Features
+## Features :-
 
-### For Citizens
-- ✅ **Simple Reporting**: Web-based form with GPS/manual location
-- ✅ **Image Upload**: Multiple photos of road damage
-- ✅ **Anonymous Option**: Report without revealing identity
-- ✅ **Real-time Tracking**: Track report status 24/7
-- ✅ **Notifications**: SMS/Email updates on progress
+### For Citizens :
+-  **Simple Reporting**: Web-based form with GPS/manual location
+-  **Image Upload**: Multiple photos of road damage
+-  **Anonymous Option**: Report without revealing identity
+-  **Real-time Tracking**: Track report status 24/7
+-  **Notifications**: SMS/Email updates on progress
 
-### For Officials
-- ✅ **Smart Dashboard**: AI-filtered queue of pending reports
-- ✅ **Verification Tools**: Quick approve/reject with override capability
-- ✅ **Auto-Routing**: Intelligent department assignment (with manual control)
-- ✅ **Workload Management**: See department capacity at a glance
-- ✅ **Complete Audit Trail**: Every action logged
+### For Officials :
+-  **Smart Dashboard**: AI-filtered queue of pending reports
+-  **Verification Tools**: Quick approve/reject with override capability
+-  **Auto-Routing**: Intelligent department assignment (with manual control)
+-  **Workload Management**: See department capacity at a glance
+-  **Complete Audit Trail**: Every action logged
 
-### AI Features (All with Human Override)
-- ✅ **Image Verification**: "Is this actually road damage?"
-- ✅ **Damage Classification**: Pothole, crack, waterlogging, etc.
-- ✅ **Severity Assessment**: Low/Medium/High/Critical
-- ✅ **Duplicate Detection**: Prevent duplicate reports
-- ✅ **Fraud Flagging**: Identify suspicious patterns
-- ✅ **Priority Scoring**: Suggest urgent cases
+### AI Features (All with Human Override) :
+-  **Image Verification**: "Is this actually road damage?"
+-  **Damage Classification**: Pothole, crack, waterlogging, etc.
+-  **Severity Assessment**: Low/Medium/High/Critical
+-  **Duplicate Detection**: Prevent duplicate reports
+-  **Fraud Flagging**: Identify suspicious patterns
+-  **Priority Scoring**: Suggest urgent cases
 
-## 🚀 Quick Start
+## Quick Start :-
 
 ### Using Docker (Recommended)
 
@@ -71,7 +71,7 @@ docker-compose exec web python manage.py createsuperuser
 open http://localhost:8000
 ```
 
-### Manual Setup
+### Manual Setup :-
 
 ```bash
 # 1. Setup virtual environment
@@ -101,11 +101,11 @@ python manage.py runserver
 celery -A smc_platform worker -l info
 ```
 
-## 🏗️ Architecture
+## Architecture :-
 
-### Technology Stack
+### Technology Stack :-
 
-**Backend**
+**Backend** :
 - Django 5.0 (Python web framework)
 - Django REST Framework (API with JWT auth)
 - PostgreSQL 15 (Database, SQLite supported for dev)
@@ -114,19 +114,19 @@ celery -A smc_platform worker -l info
 - Django Channels (Real-time WebSocket updates)
 - WhiteNoise (Efficient static file serving)
 
-**Frontend**
+**Frontend** :
 - Django Templates + Bootstrap 5
 - Alpine.js (Interactive components)
 - Leaflet.js (Maps with OpenStreetMap)
 - Chart.js (Visualizations)
 
-**AI/ML**
+**AI/ML** :
 - TensorFlow/PyTorch (Image classification)
 - Pre-trained models fine-tuned for Indian roads
 - OpenCV (Image processing)
 - scikit-learn (ML utilities)
 
-## 📂 Project Structure
+## Project Structure :
 
 ```
 smc-platform/
